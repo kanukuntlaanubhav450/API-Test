@@ -8,6 +8,9 @@ app.use(cors());
 app.use(express.json());
 
 const PORT = process.env.PORT || 5000;
+app.get("/", (req, res) => {
+  res.status(200).send("Server is healthy!");
+});
 
 /**
  * POST /proxy
