@@ -186,14 +186,17 @@ useEffect(() => {
   const start = performance.now();
 
   try {
-    const res = await fetch(
-      `${import.meta.env.VITE_API_URL || "http://localhost:5000"}/proxy`,
-      {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(payload),
-      }
-    );
+   const API_BASE = import.meta.env.VITE_API_BASE_URL;
+
+const res = await fetch(
+  `${API_BASE}/proxy`,
+  {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(payload),
+  }
+);
+
 
     // Extract response headers
     const rawHeaders = {};

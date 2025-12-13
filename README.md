@@ -1,4 +1,20 @@
 **API-Test**
+## 🚀 Live Demo
+
+- **Frontend (Netlify):**  
+  https://meek-bubblegum-a0a5f7.netlify.app/
+
+- **Backend API (Render):**  
+  https://api-tester-backend-2fog.onrender.com/
+
+
+  ### How to use
+1. Open the frontend link
+2. Sign up or log in
+3. Enter any public API URL
+4. Send requests and save them to collections
+
+
 
 - **What:**: A lightweight API testing app (React + Vite frontend) with a small Node/Express proxy backend used to forward requests and avoid CORS. Persisted user data (history, collections, login events) is stored in Firestore via Firebase in the frontend.
 - **Status:**: Local development-ready. Requires Firebase project + environment variables.
